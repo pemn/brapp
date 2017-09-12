@@ -1,5 +1,5 @@
 # brapp
-Angular js app using a REST api for managing matches guesses.
+Angular js app using a REST api for managing sport match guesses.
 # Details
 Uses php-crud-api as the backend API.  
 Its a custom project and unlikely to be used as is, but should contain some useful structures that may be required by many apps.  

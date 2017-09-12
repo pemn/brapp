@@ -1,0 +1,27 @@
+<div ng-controller="form_approve_p">
+  <h3 class="text-center">Aprovar inscri&ccedil;&atilde;o</h3>
+  <form name="form1" ng-submit="submitForm()">
+    <table class="table table-bordered table-striped table-hover">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>
+          <select ng-model="user" class="form-control" ng-options="option.name for option in items" required>
+            <option value=""></option>
+          </select>            
+          </th>
+        </tr>
+      </thead>
+      <tr>
+        <td>mail</td><td>{{user.mail}}</td>
+      </tr>
+      <tr>
+        <td>phone</td><td>{{user.phone}}</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" id="i_bt_submit" class="btn btn-default"></td>
+      </tr>
+    </table>
+  </form>
+</div>

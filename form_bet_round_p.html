@@ -1,0 +1,37 @@
+<div ng-controller="form_bet_round_p">
+  <h3 class="text-center">Rodada especifica</h3>
+  <form name="form_br_a" ng-submit="submitForm()">
+    <table class="table table-bordered table-striped table-hover">
+      <thead>
+        <tr>
+          <th>Round</th>
+          <th>home</th>
+          <th>away</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>
+          <select ng-model="round_id" class="form-control" ng-options="option for option in round_ids" required>
+            <option value=""></option>
+          </select>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr ng-repeat="option in round">
+      <td>{{option.name}}</td>
+      <td><input type="text" ng-model="option.a" class="form-control" required></td>
+      <td><input type="text" ng-model="option.b" class="form-control" required></td>
+      </tr>
+      <tr>
+      <td>Seu Nome:</td>
+      <td>
+        <select ng-model="user_id" class="form-control" ng-options="option.id as option.name for option in users" required>
+          <option value=""></option>
+        </select>
+      </td>
+      <td><input type="submit" id="i_bt_submit" class="btn btn-default"></td>
+      </tr>
+    </table>
+  </form>
+</div>

@@ -20,7 +20,6 @@ angular.module('app').controller('form_score_round_p', function ($scope, apiphp,
 
   $scope.onRoundSelect = function(){
     if($scope.br_g.length == 0) return;
-    console.log("onRoundSelect");
     $scope.round.length = 0;
     for(var i=round_size;i>0;i--) {
       $scope.round.push($scope.br_g[$scope.round_id * round_size - i]);

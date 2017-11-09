@@ -10,7 +10,7 @@ angular.module('app').controller('form_score_match_p', function ($scope, apiphp,
     console.log("submitForm");
     console.log($scope.match);
     //$resource('/php-crud-api/api.php/:table/:id', {transform: true, id: '@id'}, {'put': {method:'PUT'}}).put({table: 'br_s_d'}, $scope.match, function(result) {
-    apiphp.put({table: 'br_s_d'}, $scope.match, function(result) {
+    apiphp.put({table: 'br_s'}, $scope.match, function(result) {
       console.log(result);
       alert("form data saved");
     });
